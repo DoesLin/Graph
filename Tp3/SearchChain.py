@@ -239,7 +239,6 @@ def IdentifyChain_ts(Origine, Destination, u0):
 
 
 def SearchArc(Origine, Destination, s, t):
-    # print 'chercherArc', s, ' ', t
     i = 0
     while (1):
         if Origine[i] == s and Destination[i] == t:
@@ -346,7 +345,7 @@ def SearchChainColor(infoOrigDestCpty, infoSuccPrec, infoColor, u0):
                 infoColor['Chain'].append([u, 1])
                 i = infoColor['Predecessor'][i]
 
-        print('Chain: ', infoColor['Chain'])
+        # print('Chain: ', infoColor['Chain'])
         print('Color', infoColor['Color'])
 
     return {'infoColor': infoColor, 'result': trouve}
